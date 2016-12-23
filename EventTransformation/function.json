@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "serviceInputEventHubTrigger",
+      "direction": "in",
+      "path": "madhax-he",
+      "connection": "madhax-he-conn",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEventHubMessage",
+      "path": "outeventhub",
+      "connection": "madhax-he-listen",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
