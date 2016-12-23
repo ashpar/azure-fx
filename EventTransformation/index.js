@@ -5,7 +5,7 @@ module.exports = function (context, serviceInputEventHubTrigger) {
     var payload = {};
     var events = [];
 
-    context.log('2nd commit');
+    context.log('3rd commit');
     context.bindings.outputEventHubMessage = payload;
     context.done();
 };
